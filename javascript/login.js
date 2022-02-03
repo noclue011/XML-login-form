@@ -65,7 +65,7 @@ function userRegistration() {
     var newUser = xmlDoc.createElement("USER");
     //collects the current login information in the last node of the xml document
     xmlDoc.getElementsByTagName("LOGINS")[0].appendChild(newUser);
-    xmlDoc.getElementsByTagName("USERNAME")[2].appendChild(newUsername);
+    xmlDoc.getElementsByTagName("USERNAME")[2].appendChild("MILES");
     xmlDoc.getElementsByTagName("PASSWORD")[2].appendChild(newPassword);
     //inserts the username and password for the new user account into the suggested log ins section of the login form
     $('.customUser').html("Username: " + xmlDoc.getElementsByTagName("USERNAME")[2].childNodes[0].nodeValue
