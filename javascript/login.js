@@ -6,7 +6,7 @@ var x;
 
 //runs when the html document first loads
 function load() {
-    //loads the local xml file (only works from local server or running chrome with "allow-file-access-from-files" console command)
+    //loads the local xml file
     xmlFile = "users.xml";
     //opens a new XMLHttpRequest and sends a GET request to retrieve the xml file
     xhttp = new XMLHttpRequest();
@@ -68,9 +68,4 @@ function userRegistration() {
     //inserts the username and password for the new user account into the suggested log ins section of the login form
     $('.customUser').html("Username: " + xmlDoc.getElementsByTagName("USERNAME")[2].childNodes[0].nodeValue
     + "<br>Password: " + xmlDoc.getElementsByTagName("PASSWORD")[2].childNodes[0].nodeValue);
-
-    //I was not able to find a way to permanently save the new user registration to the xml file without setting up a local server or diving
-    //into new server side programming languages such as node.js or php. Because of this lack of functionality I stuck with temporarily editing
-    //the xml file to allow the user to create a new temporary login, with the knowledge that this functionality can be extended to permanently
-    //save the new user account if this website was hosted on a server.
 }

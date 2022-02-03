@@ -9,15 +9,6 @@
    font-size: large;
    color: red;
  }
-/*Text instructing the user to open chrome with special arguments for accessing local files or set up a local server*/
- .pageInstructions {
-   max-width:50%;
-   margin: auto;
-   border: 3px solid black;
-   border-radius: 25px;
-   padding:5px;
-   background-color: #dbf9fc;
- }
 /*button to open the login form*/
  #loginButton {
    font-size: larger;
