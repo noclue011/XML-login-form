@@ -62,7 +62,9 @@ function userRegistration() {
     //collects the registration information that the user entered into the registration form
     var newUsername = document.getElementById("newUsername").value;
     var newPassword = document.getElementById("newPassword").value;
+    var newUser = xmlDoc.createElement("USER");
     //collects the current login information in the last node of the xml document
+    xmlDoc.getElementsByTagName("LOGINS")[0].appendChild(newUser);
     xmlDoc.getElementsByTagName("USERNAME")[2].appendChild(newUsername);
     xmlDoc.getElementsByTagName("PASSWORD")[2].appendChild(newPassword);
     //inserts the username and password for the new user account into the suggested log ins section of the login form
