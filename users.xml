@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LOGINS>
+  <USER>
+    <USERNAME>username</USERNAME>
+    <PASSWORD>password</PASSWORD>
+  </USER>
+  <USER>
+    <USERNAME>test</USERNAME>
+    <PASSWORD>tester</PASSWORD>
+  </USER>
+  <USER>
+    <USERNAME>login</USERNAME>
+    <PASSWORD>loginpage</PASSWORD>
+  </USER>
+</LOGINS>

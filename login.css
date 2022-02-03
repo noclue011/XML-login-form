@@ -1,0 +1,67 @@
+ /*Header text for the log in and register sections of the login form */
+ .login_text {
+   font-weight: bolder;
+   font-size: large;
+ }
+ /*Text that appears when the user log in fails*/
+ .login_failed {
+   font-weight: bolder;
+   font-size: large;
+   color: red;
+ }
+/*Text instructing the user to open chrome with special arguments for accessing local files or set up a local server*/
+ .pageInstructions {
+   max-width:50%;
+   margin: auto;
+   border: 3px solid black;
+   border-radius: 25px;
+   padding:5px;
+   background-color: #dbf9fc;
+ }
+/*button to open the login form*/
+ #loginButton {
+   font-size: larger;
+   margin-left: 45%;
+   margin-top: 20px;
+ }
+ 
+ /* The Modal login form(background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal login form Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button on the login form*/
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
